@@ -1,0 +1,42 @@
+button{
+    margin-bottom: 4px;
+    border-radius: 25px;
+    border: 5px;
+    box-shadow: gray 0px 0px 8px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: white;
+    transition: 1s;
+    color: black;
+    height: 20px;
+}
+button:hover{
+    letter-spacing: 5px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    box-shadow: gray 0px 7px 29px 0px;
+}
+button:active{
+    letter-spacing: 4px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    box-shadow: gray 0px 0px 0px 0px;
+    transform: translateY(2.5px);
+    transition: 100ms;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#meuVideo.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;   /* ocupa toda a largura da tela */
+  height: 100vh;  /* ocupa toda a altura da tela */
+  object-fit: cover; /* mantém proporção e preenche a tela */
+  z-index: 9999; /* fica acima de tudo */
+  transform: rotate(0deg); /* caso queira girar, pode usar rotate(90deg) para deitado */
+}
