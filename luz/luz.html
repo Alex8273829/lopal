@@ -1,57 +1,71 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="style.css">
-	<body>
-<h2>Vídeo especial 🎬</h2>
+	<body> 
+		<img src="pokemon.png" style="width:300px;">
+		<p> <img src="bolas.png" style="width:100px;">
+		
+		</p>
+		<p>
+			 <img src="pokemon2.png" style="width:100px;">
+		</p>
 
-<video id="meuVideo" width="400" class="container">
-  <source src="lara.mp4" type="video/mp4">
-</video>
+		<button onclick="document.getElementById( 'minhaImagem').src=
+			'luz_ligada.png'">deixe a Ren feliz</button>
 
-<br><br>
+		<img id="minhaImagem" src="luz_ligada.png" style="width:100px">
 
-<button id="btnTrocaVideo">🎬 Próximo Vídeo</button>
-<button id="btnPlayPause">⏯ Play/Pause</button>x
+		<button onclick="document.getElementById( 'minhaImagem').src=
+			'luz_desligada.png'">deixe a Ren brava</button>
 
-<script>
-  var listaVideos = [
-    "lara.mp4",
-    "jinx.mp4",
-    "tlou.mp4",
-    "judy.mp4",
-    "godofwar.mp4",
-    "zelda.mp4",
-    "gojo.mp4",
-    "girls.mp4",
-   "okarun.mp4",
-   "lucy.mp4",
-   "michiko.mp4",
-   "fnaf.mp4"
-  ];
-  var indiceAtual = 0;
+		<button onclick="document.getElementById( 'minhaImagem2').src=
+			'miku_feliz.png'">deixe a miku feliz</button>
 
-  var botao = document.getElementById("btnTrocaVideo");
-  var btnPlayPause = document.getElementById("btnPlayPause");
-  var video = document.getElementById("meuVideo");
+		<img id="minhaImagem2" src="miku_feliz.png" style="width:100px">
 
-  botao.onclick = function() {
-    indiceAtual++;
-    if (indiceAtual >= listaVideos.length) {
-      indiceAtual = 0;
-    }
-    video.src = listaVideos[indiceAtual];
-    video.play();
-    nomeVideo.innerText = "Agora tocando: " + listaVideos[indiceAtual];
-  };
+		<button onclick="document.getElementById( 'minhaImagem2').src=
+			'miku_assustada.png'">assuste a miku</button>
 
-  
-  btnPlayPause.onclick = function() {
-    if (video.paused) {
-      video.play();
-    } else {
-      video.pause();
-    }
-  };
-</script>
+		<button onclick="document.getElementById( 'minhaImagem3').src=
+			'bebe_feliz.png'">deixe o bebe feliz</button>
+
+		<img id="minhaImagem3" src="bebe_feliz.png" style="width:100px">
+		
+		<button onclick="document.getElementById( 'minhaImagem3').src=
+			'derreter_bebe.png'">derreta o bebe</button>
+
+		<button onclick="document.getElementById( 'minhaImagem4').src=
+			'coringa_normal.png'">deixe o coringa normal</button>
+
+		<img id="minhaImagem4" src="coringa_normal.png" style="width:100px">
+
+		<button onclick="document.getElementById( 'minhaImagem4').src=
+			'coringa_bangelo.png'">deixe o coringa bangelo</button>
+
+		<button onclick="document.getElementById( 'minhaImagem5').src=
+			'batman.png'">batman</button>
+		
+		<img id="minhaImagem5" src="batman.png" style="width:100px">
+
+		<button onclick="document.getElementById( 'minhaImagem5').src=
+			'bafman.png'">bafman</button>
+			
+		<button onclick="document.getElementById( 'minhaImagem6').src=
+			'gengar.gif'">veja o gengar!</button>
+
+		<img id="minhaImagem6" src="gengar.gif" style="width:100px">
+
+		<button onclick="document.getElementById( 'minhaImagem6').src=
+			'sylveon.gif'">veja a sylveon!</button>
+
+		<button onclick="document.getElementById( 'minhaImagem7').src=
+		"female.gif">veja a treinadora!</button>
+		
+		<img id="minhaImagem7" src="female.gif" style="width:100px">
+		
+		<button onclick="document.getElementById( 'minhaImagem7').src=
+		"masc.gif">veja o treinador!</button>
+
+
+
 	</body>
 </html>

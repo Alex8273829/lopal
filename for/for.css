@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+h1{
+    color: rgb(15, 9, 82);
+    text-align: center;
+    font-size : 50px;
+}
+p{
+    color: rgb(6, 77, 125);
+    text-align: center;
+    font-size : 30px;
+}
